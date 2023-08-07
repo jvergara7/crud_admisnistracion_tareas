@@ -157,7 +157,7 @@ export default {
                                                 </tbody>
                                             </table>
                                             <div v-else>
-                                                * Esta tarea no cuenta con documentos
+                                                * No hay tareas registradas
                                             </div>
                                         </div>
                                     </div>

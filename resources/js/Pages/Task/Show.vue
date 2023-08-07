@@ -110,9 +110,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                                                 <span v-else>{{ file.file }}</span>
                                             </td>
                                             <td class="border border-gray-400 px-4 py-2">
-                                                <a :href="`/storage/app/files/${file.file}`" download>
-                                                    <button type="button">Descargar</button>
-                                                </a>
+                                                <a :href="route('download', { fileId: file.id })" class="w-16 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-md mr-2">Descargar</a>
                                             </td>
                                         </tr>
                                         </tbody>
